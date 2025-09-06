@@ -26,6 +26,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(args)
     local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
     local buf = args.buf
+     if client then
+      require("lsp.on_attach").on_attach(client, buf)
+    end
 
     -- Activer autocomplétion si supporté
     if client:supports_method('textDocument/completion') then

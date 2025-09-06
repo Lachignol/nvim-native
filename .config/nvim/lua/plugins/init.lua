@@ -8,6 +8,7 @@ vim.pack.add({
 	{ src = "https://github.com/L3MON4D3/LuaSnip" },
 	{ src = "https://github.com/folke/zen-mode.nvim" },
 	{ src = "https://github.com/akinsho/toggleterm.nvim" },
+	{ src = "https://github.com/rafamadriz/friendly-snippets" },
 })
 
 -- Charger config plugins une fois installés

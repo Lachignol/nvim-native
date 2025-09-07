@@ -1,15 +1,5 @@
 require("lsp.servers").setup()
 
-vim.lsp.enable(
-	{
-		"lua_ls",
-		"html",
-		"css-lsp",
-		"ts_ls",
-		"gopls",
-		"clangd",
-	}
-)
 
 
 

@@ -10,6 +10,15 @@ function M.setup()
 		cmd = { "clangd", "--background-index", "--header-insertion=never" },
 		on_attach = handlers.clangd_handler,
 	})
+
+vim.lsp.enable({
+		"lua_ls",
+		"html",
+		"css-lsp",
+		"ts_ls",
+		"gopls",
+		"clangd",
+})
 end
 
 return M

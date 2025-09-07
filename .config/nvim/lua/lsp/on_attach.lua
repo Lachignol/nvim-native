@@ -21,6 +21,13 @@ function M.on_attach(client, bufnr)
     bufmap('n', '[d', vim.diagnostic.goto_prev, { desc = "Diagnostic précédent" })
     bufmap('n', '<leader>d', vim.diagnostic.open_float, { desc = "Afficher diagnostics" })
     bufmap('n', '<leader>fe', vim.diagnostic.setloclist, { desc = "Liste rapide diagnostics" })
+    if client:supports_method("textDocument/formatting") then
+	    vim.api.nvim_create_autocmd("BufWritePre",{
+		    buffer = bufnr,
+		    callback = function ()
+			    vim.lsp.buf.format() end,
+	    })
+    end
 
 end
 return M

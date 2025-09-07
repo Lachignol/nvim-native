@@ -4,6 +4,7 @@ function M.setup()
 	vim.lsp.config("lua_ls", require("lsp.servers.lua_ls"))
 	vim.lsp.config("html", require("lsp.servers.html"))
 	vim.lsp.config("css-lsp", require("lsp.servers.css"))
+	vim.lsp.config("gopls", require("lsp.servers.gopls"))
 	vim.lsp.config("clangd", require("lsp.servers.clangd"))
 
 	vim.lsp.enable({

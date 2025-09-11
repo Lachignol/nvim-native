@@ -10,6 +10,7 @@ vim.pack.add({
 	{ src = "https://github.com/folke/zen-mode.nvim" },
 	{ src = "https://github.com/akinsho/toggleterm.nvim" },
 	{ src = "https://github.com/rafamadriz/friendly-snippets" },
+	{ src = "https://github.com/m4xshen/hardtime.nvim" },
 })
 
 -- Charger config plugins une fois installés
@@ -19,3 +20,4 @@ require("plugins.plugin_configs.oil")
 require("plugins.plugin_configs.luasnip")
 require("plugins.plugin_configs.zen")
 require("plugins.plugin_configs.terminal")
+require("plugins.plugin_configs.hardtime")

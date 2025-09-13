@@ -1,10 +1,15 @@
-vim.opt.number = true -- Active les numéros absolus globalement
-vim.opt.relativenumber = true -- Active les numéros relatifs globalement
+vim.opt.number = true             -- Active les numéros absolus globalement
+vim.opt.relativenumber = true     -- Active les numéros relatifs globalement
 vim.opt.expandtab = false
-vim.opt.cursorline = true -- Highlight the current line
+vim.opt.cursorline = true         -- Highlight the current line
 vim.opt.clipboard = "unnamedplus" -- on utilise le presse papier du système par défaut
 vim.opt.signcolumn = "yes"
 vim.opt.winborder = "rounded"
+-- Active lazyredraw pour réduire le nombre de redraws inutiles
+-- Ce réglage améliore la fluidité du scroll, notamment lors de l'exécution de macros ou de défilements rapides,
+-- en évitant de rafraîchir l'écran plus que nécessaire.
+vim.opt.lazyredraw = true
+
 
 ----------------------HISTORY----------------------
 -- Gestion de l'historique d'annulation

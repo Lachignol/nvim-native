@@ -2,7 +2,7 @@ require('lsp_signature').setup({
 	bind = true,
 	floating_window = true,
 	hint_enable = true,
-	hint_prefix = "🦄 ",
+	hint_prefix = "📟 Lachignol:  ",
 	handler_opts = {
 		border = "rounded"
 	},

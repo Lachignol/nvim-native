@@ -1,7 +1,7 @@
 -- lua/autocompletion.lua
 local M = {}
 function M.setup()
-	vim.opt.completeopt = { "menuone", "noselect", "noinsert" }
+	vim.opt.completeopt = { "menuone", "noselect", "noinsert", "popup" }
 	vim.api.nvim_create_autocmd('LspAttach', {
 		group = vim.api.nvim_create_augroup('my.lsp', {}),
 		callback = function(args)

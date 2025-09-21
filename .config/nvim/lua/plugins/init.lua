@@ -10,6 +10,11 @@ vim.pack.add({
 	{ src = "https://github.com/Xuyuanp/nerdtree-git-plugin" },
 	{ src = "https://github.com/barrett-ruth/live-server.nvim" },
 	{ src = "https://github.com/m4xshen/autoclose.nvim" },
+	{ src = "https://github.com/tris203/precognition.nvim" },
+	{ src = "https://github.com/ThePrimeagen/vim-be-good" },
+	{ src = "https://github.com/nvzone/typr" },
+	{ src = "https://github.com/nvzone/volt" },
+	{ src = "https://github.com/sphamba/smear-cursor.nvim" },
 })
 
 -- Charger config plugins une fois installés
@@ -23,3 +28,6 @@ require("plugins.plugin_configs.git_conflict")
 require("plugins.plugin_configs.nerdtree-git-plugin")
 require("plugins.plugin_configs.live-server")
 require("plugins.plugin_configs.autoclose")
+require("plugins.plugin_configs.precognition")
+require("plugins.plugin_configs.typr")
+require("plugins.plugin_configs.smear_cursor")

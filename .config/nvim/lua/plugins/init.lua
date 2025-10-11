@@ -15,6 +15,9 @@ vim.pack.add({
 	{ src = "https://github.com/nvzone/typr" },
 	{ src = "https://github.com/nvzone/volt" },
 	{ src = "https://github.com/sphamba/smear-cursor.nvim" },
+	{ src = "https://github.com/akinsho/bufferline.nvim" },
+	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
+	{ src = "https://github.com/lervag/wiki.vim" },
 })
 
 -- Charger config plugins une fois installés
@@ -31,3 +34,5 @@ require("plugins.plugin_configs.autoclose")
 require("plugins.plugin_configs.precognition")
 require("plugins.plugin_configs.typr")
 require("plugins.plugin_configs.smear_cursor")
+require("plugins.plugin_configs.bufferline")
+require("plugins.plugin_configs.wiki")

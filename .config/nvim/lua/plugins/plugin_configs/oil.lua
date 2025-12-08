@@ -15,4 +15,4 @@ vim.keymap.set('n', '<leader>e', function()
 	else
 		require("oil").open_float() -- ouvre Oil en floating window
 	end
-end, { desc = "Toggle Oil floating window" })
+end, { desc = "Ouvrir oil" })

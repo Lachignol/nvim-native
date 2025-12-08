@@ -1,5 +1,5 @@
 vim.pack.add({
-	{ src = 'https://github.com/neovim/nvim-lspconfig' },
+	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/mason-org/mason-lspconfig.nvim" },
 	{ src = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim" },
@@ -10,7 +10,6 @@ vim.pack.add({
 require("lsp.settings.plugins.luasnip")
 require("lsp.settings.plugins.mason")
 require("lsp.settings.plugins.lsp_signature")
-require("lsp.servers").setup()
 require("lsp.settings.diagnostics").setup()
 require("lsp.settings.modify_native_handler_for_filter_diag").setup()
 require("lsp.settings.autocompletion").setup()

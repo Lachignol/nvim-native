@@ -17,9 +17,9 @@ vim.pack.add({
 	{ src = "https://github.com/sphamba/smear-cursor.nvim" },
 	{ src = "https://github.com/akinsho/bufferline.nvim" },
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
-	{ src = "https://github.com/lervag/wiki.vim" },
 	{ src = "https://github.com/ellisonleao/glow.nvim" },
 	{ src = 'https://github.com/leath-dub/snipe.nvim' },
+	{ src = "https://github.com/echasnovski/mini.clue" },
 })
 
 -- Charger config plugins une fois installés
@@ -37,6 +37,6 @@ require("plugins.plugin_configs.precognition")
 require("plugins.plugin_configs.typr")
 require("plugins.plugin_configs.smear_cursor")
 require("plugins.plugin_configs.bufferline")
-require("plugins.plugin_configs.wiki")
 require("plugins.plugin_configs.glow")
 require("plugins.plugin_configs.snipe")
+require("plugins.plugin_configs.clue")

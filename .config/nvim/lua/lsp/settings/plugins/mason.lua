@@ -8,18 +8,35 @@ require("mason").setup({
 	},
 })
 
+
 -- Setup l'installateur automatique
 require("mason-tool-installer").setup({
-	ensure_installed = {
-		"lua-language-server", -- Lua
-		"css-lsp",      -- css
-		"html-lsp",     -- html
-		"typescript-language-server", -- TypeScript
-		"gopls",        -- Go
-		"clangd",       -- C/C++
-		-- ajoute d'autres si besoin
-	},
-	run_on_start = true,
+    ensure_installed = {
+        "lua-language-server",
+        "cssls",
+        "html-lsp",
+        "typescript-language-server",
+        "gopls",
+        "clangd",
+    },
+    run_on_start = true,
 })
 
-require("mason-lspconfig").setup()
+require("mason-lspconfig").setup({
+    ensure_installed = {
+        "lua_ls",   -- nom correct pour LSP
+        "cssls",
+        "html",
+        "ts_ls",
+        "gopls",
+        "clangd",
+    },
+    handlers = {
+        function(server_name)
+            require("lspconfig")[server_name].setup({
+                on_attach = require("lsp.on_attach").on_attach,
+            })
+        end,
+    },
+})
+

@@ -13,7 +13,7 @@ require("mason").setup({
 require("mason-tool-installer").setup({
     ensure_installed = {
         "lua-language-server",
-        "cssls",
+        "css-lsp",
         "html-lsp",
         "typescript-language-server",
         "gopls",
@@ -24,7 +24,7 @@ require("mason-tool-installer").setup({
 
 require("mason-lspconfig").setup({
     ensure_installed = {
-        "lua_ls",   -- nom correct pour LSP
+        "lua_ls", 
         "cssls",
         "html",
         "ts_ls",

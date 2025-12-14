@@ -1,1 +1,1 @@
-vim.keymap.set("n", "<leader>t", ":NERDTreeToggle<CR>", { desc = "Ouvrir tree" })
+vim.keymap.set("n", "<leader>to", ":NERDTreeToggle<CR>", { desc = "Ouvrir tree" })

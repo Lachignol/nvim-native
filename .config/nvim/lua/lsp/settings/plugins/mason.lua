@@ -18,6 +18,7 @@ require("mason-tool-installer").setup({
         "typescript-language-server",
         "gopls",
         "clangd",
+	"tinymist",
     },
     run_on_start = true,
 })
@@ -30,6 +31,7 @@ require("mason-lspconfig").setup({
         "ts_ls",
         "gopls",
         "clangd",
+	"tinymist",
     },
     handlers = {
         function(server_name)

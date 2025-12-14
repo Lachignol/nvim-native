@@ -20,6 +20,7 @@ vim.pack.add({
 	{ src = "https://github.com/ellisonleao/glow.nvim" },
 	{ src = 'https://github.com/leath-dub/snipe.nvim' },
 	{ src = "https://github.com/echasnovski/mini.clue" },
+	{ src = "https://github.com/chomosuke/typst-preview.nvim" },
 })
 
 -- Charger config plugins une fois installés
@@ -40,3 +41,4 @@ require("plugins.plugin_configs.bufferline")
 require("plugins.plugin_configs.glow")
 require("plugins.plugin_configs.snipe")
 require("plugins.plugin_configs.clue")
+require("plugins.plugin_configs.typst-preview")

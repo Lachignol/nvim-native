@@ -9,9 +9,8 @@ vim.pack.add({
 	{ src = "https://github.com/folke/zen-mode.nvim" },
 	{ src = "https://github.com/akinsho/toggleterm.nvim" },
 	{ src = "https://github.com/m4xshen/hardtime.nvim" },
-	{ src = "https://github.com/preservim/nerdtree" },
 	{ src = "https://github.com/akinsho/git-conflict.nvim" },
-	{ src = "https://github.com/Xuyuanp/nerdtree-git-plugin" },
+	{ src = "https://github.com/nvim-tree/nvim-tree.lua" },
 	{ src = "https://github.com/barrett-ruth/live-server.nvim" },
 	{ src = "https://github.com/m4xshen/autoclose.nvim" },
 	{ src = "https://github.com/tris203/precognition.nvim" },
@@ -38,9 +37,7 @@ require("plugins.plugin_configs.oil")
 require("plugins.plugin_configs.zen")
 require("plugins.plugin_configs.terminal")
 require("plugins.plugin_configs.hardtime")
-require("plugins.plugin_configs.nerdtree")
 require("plugins.plugin_configs.git_conflict")
-require("plugins.plugin_configs.nerdtree-git-plugin")
 require("plugins.plugin_configs.live-server")
 require("plugins.plugin_configs.autoclose")
 require("plugins.plugin_configs.precognition")
@@ -54,3 +51,4 @@ require("plugins.plugin_configs.typst-preview")
 require("plugins.plugin_configs.cmdline")
 require("plugins.plugin_configs.starter")
 require("plugins.plugin_configs.marks")
+require("plugins.plugin_configs.nvim-tree")

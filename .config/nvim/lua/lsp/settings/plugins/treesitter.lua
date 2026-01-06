@@ -1,17 +1,22 @@
--- lsp/settings/plugins/treesitter.lua
-
 local ts = require('nvim-treesitter')
 
--- Reset complet de la config
 ts.setup({
   install_dir = vim.fn.stdpath('data') .. '/site',
 })
 
 -- Langages à installer
 local languages = {
-  'bash', 'c', 'css', 'go', 'html', 
-  'javascript', 'json', 'lua', 'markdown', 'python',
-  'rust', 'typescript', 'typst', 'vim', 'vimdoc', 'yaml'
+  'asm',
+  'bash', 'c', 'cpp', 
+  'css', 'dockerfile',
+  'go', 'html', 
+  'javascript', 'json', 'lua', 
+  'make',     
+  'markdown', 'python',
+  'rust', 'sql', 
+  'toml',  
+  'typescript', 'typst', 
+  'vim', 'vimdoc', 'yaml'
 }
 
 
